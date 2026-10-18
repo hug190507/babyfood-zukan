@@ -8,6 +8,7 @@ import { AGES, FEATURED_MAKER_IDS, INGREDIENTS, MAKERS, TYPES, type TypeId } fro
 import { PRODUCTS } from '../data/products'
 import { ARTICLES } from '../data/articles'
 import { sortProducts } from '../lib/search'
+import { asset } from '../lib/asset'
 
 const TYPE_ICON: Record<TypeId, LucideIcon> = {
   retort: Package,
@@ -32,7 +33,7 @@ function Hero() {
         <div className="relative -mx-4 md:mx-0 lg:order-2">
           <div className="relative aspect-[4/3] overflow-hidden md:aspect-[16/10] md:rounded-4xl lg:aspect-[4/5]">
             <img
-              src="/images/hero-baby.webp"
+              src={asset('images/hero-baby.webp')}
               alt="ハイチェアに座り、笑顔で野菜を食べる赤ちゃん"
               className="h-full w-full object-cover object-[50%_42%]"
               loading="eager"
@@ -218,7 +219,7 @@ export default function Home() {
       <section aria-labelledby="for-makers-title" className="py-10 md:py-16">
         <div className="container-x">
           <div className="relative overflow-hidden rounded-4xl bg-leaf-100 px-5 py-8 md:flex md:items-center md:justify-between md:gap-10 md:px-12 md:py-12">
-            <img src="/images/veggies-row.png" alt="" aria-hidden className="pointer-events-none absolute -bottom-2 right-2 w-32 opacity-80 md:w-44" />
+            <img src={asset('images/veggies-row.png')} alt="" aria-hidden className="pointer-events-none absolute -bottom-2 right-2 w-32 opacity-80 md:w-44" />
             <div className="relative">
               <p className="text-xs font-bold tracking-[0.2em] text-leaf-700">FOR MAKERS</p>
               <h2 id="for-makers-title" className="mt-1 text-xl font-bold md:text-2xl">

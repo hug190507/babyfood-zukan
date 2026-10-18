@@ -10,7 +10,12 @@ pnpm dev        # 開発サーバー
 pnpm typecheck  # 型チェック
 pnpm test       # 単体テスト（vitest）
 pnpm build      # 本番ビルド（tsc -b && vite build）
+pnpm build:pages # GitHub Pages用ビルド（/babyfood-zukan/ 配下で配信）
 ```
+
+## 公開URL
+
+https://hug190507.github.io/babyfood-zukan/ （gh-pages ブランチから配信）
 
 ## 画面
 

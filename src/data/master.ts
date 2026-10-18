@@ -1,5 +1,7 @@
 // 検索軸のマスターデータ
 
+import { asset } from '../lib/asset'
+
 export type AgeId = '5-6' | '7-8' | '9-11' | '12-18' | '18plus'
 export type TypeId = 'retort' | 'frozen' | 'tezukami' | 'freezedry' | 'snack'
 export type IngredientId = 'rice' | 'vegetable' | 'fish' | 'meat' | 'beans' | 'fruit'
@@ -18,11 +20,11 @@ export interface AgeOption extends Option<AgeId> {
 }
 
 export const AGES: AgeOption[] = [
-  { id: '5-6', label: '5〜6か月', stage: 'ゴックン期', image: '/images/age-5-6.webp', alt: 'テーブルの前に座ってほほえむ赤ちゃん' },
-  { id: '7-8', label: '7〜8か月', stage: 'モグモグ期', image: '/images/age-7-8.webp', alt: '手に持った野菜スティックを食べる赤ちゃん' },
-  { id: '9-11', label: '9〜11か月', stage: 'カミカミ期', image: '/images/age-9-11.webp', alt: 'おやきを両手で持って食べる赤ちゃん' },
-  { id: '12-18', label: '12〜18か月', stage: 'パクパク期', image: '/images/age-12-18.webp', alt: 'ママと一緒に食卓で笑顔を見せる子ども' },
-  { id: '18plus', label: '1歳半〜', stage: '幼児食へ', image: '/images/age-18plus.webp', alt: 'ママに抱き上げられて笑う子ども' },
+  { id: '5-6', label: '5〜6か月', stage: 'ゴックン期', image: asset('images/age-5-6.webp'), alt: 'テーブルの前に座ってほほえむ赤ちゃん' },
+  { id: '7-8', label: '7〜8か月', stage: 'モグモグ期', image: asset('images/age-7-8.webp'), alt: '手に持った野菜スティックを食べる赤ちゃん' },
+  { id: '9-11', label: '9〜11か月', stage: 'カミカミ期', image: asset('images/age-9-11.webp'), alt: 'おやきを両手で持って食べる赤ちゃん' },
+  { id: '12-18', label: '12〜18か月', stage: 'パクパク期', image: asset('images/age-12-18.webp'), alt: 'ママと一緒に食卓で笑顔を見せる子ども' },
+  { id: '18plus', label: '1歳半〜', stage: '幼児食へ', image: asset('images/age-18plus.webp'), alt: 'ママに抱き上げられて笑う子ども' },
 ]
 
 export interface TypeOption extends Option<TypeId> {

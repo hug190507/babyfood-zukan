@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export interface Article {
   id: string
   category: string
@@ -14,7 +16,7 @@ export const ARTICLES: Article[] = [
     category: '離乳食の進め方',
     title: '離乳食はいつから？月齢ごとの進め方とベビーフードの上手な取り入れ方',
     excerpt: 'はじめての離乳食で迷いやすいポイントを、月齢の目安とあわせて整理しました。',
-    image: '/images/article-start.webp',
+    image: asset('images/article-start.webp'),
     alt: 'トレーに並んだ離乳食の前に座る赤ちゃん',
     body: [
       '離乳食をはじめる時期や進め方は、赤ちゃんの発達や体調によって一人ひとり異なります。月齢はあくまで目安として、お子さまの様子を見ながら進めましょう。',
@@ -27,7 +29,7 @@ export const ARTICLES: Article[] = [
     category: '手づかみ食べ',
     title: '手づかみ食べはいつから？はじめどきのサインと食べやすい形のポイント',
     excerpt: '自分で食べたい気持ちを応援する、手づかみ食べの準備と工夫を紹介します。',
-    image: '/images/article-tezukami.webp',
+    image: asset('images/article-tezukami.webp'),
     alt: '小さな手で手づかみ食べ用のおやきを持つ赤ちゃん',
     body: [
       '手づかみ食べは、食べ物を目で見て、手でつかみ、口に運ぶという一連の動きを練習する大切なステップです。',
@@ -40,7 +42,7 @@ export const ARTICLES: Article[] = [
     category: '冷凍離乳食の選び方',
     title: '冷凍離乳食の選び方｜保存・解凍のコツと比較するときのチェックポイント',
     excerpt: 'ストックしやすい冷凍離乳食を選ぶときに見ておきたいポイントをまとめました。',
-    image: '/images/article-frozen.webp',
+    image: asset('images/article-frozen.webp'),
     alt: '冷凍庫から小分けの離乳食を取り出すママと赤ちゃん',
     body: [
       '冷凍離乳食は、まとめて購入してストックできる点が魅力です。冷凍庫のスペースや1回あたりの量を確認しておくと安心です。',

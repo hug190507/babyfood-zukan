@@ -1,4 +1,5 @@
 import type { AgeId, IngredientId, StorageId, TypeId } from './master'
+import { asset } from '../lib/asset'
 
 export interface Nutrition {
   energyKcal: number
@@ -61,7 +62,7 @@ export const PRODUCTS: Product[] = [
     description: '株式会社HUGの自社ブランドです。商品ラインナップ・価格・原材料などの詳細は公式サイトでご確認ください。',
     isPR: true,
     isSample: false,
-    photo: '/images/tedemogu-product.webp',
+    photo: asset('images/tedemogu-product.webp'),
     photoAlt: 'てでもぐの商品をお皿に盛り付けた様子',
     publishedAt: '2026-10-01',
     views30d: 0,
